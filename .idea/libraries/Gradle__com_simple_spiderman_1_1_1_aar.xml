@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.simple:spiderman:1.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0e9f878d778bd691099ca0962fe71c6/jetified-spiderman-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0e9f878d778bd691099ca0962fe71c6/jetified-spiderman-1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aafbc3ad5a4dfdbe4eca4af7fb455389/jetified-spiderman-1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aafbc3ad5a4dfdbe4eca4af7fb455389/jetified-spiderman-1.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aafbc3ad5a4dfdbe4eca4af7fb455389/jetified-spiderman-1.1.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.simple/spiderman/1.1.1/e8241afd43ba87a64c558cd313800108ccb99f2/spiderman-1.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.simple/spiderman/1.1.1/eb7d209a070fb9924a7b1719c47d1256e3eb5008/spiderman-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

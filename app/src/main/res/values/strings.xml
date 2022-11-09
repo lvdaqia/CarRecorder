@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">CarRecorder</string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="close_y_n">"Are you sure to exit "</string>
+    <string name="str_menual">设置</string>
+
+    <string name="str_record_started">正在连接存储服务器...</string>
+    <string name="str_record_stopped">录像结束</string>
+    <string name="str_recording">正在录像...</string>
+    <string name="str_start_push">开始推流</string>
+    <string name="str_stop_push">结束推流</string>
+    <string name="str_start_talk">开始对讲</string>
+    <string name="str_start_preview">开始预览</string>
+    <string name="str_start_record">开始录像</string>
+    <string name="str_stop_preview">停止预览</string>
+    <string name="str_stop_record">停止录像</string>
+    <string name="str_stop_talk">停止对讲</string>
+    <string name="str_device_info">设备信息</string>
+    <string name="str_network_info">网络信息</string>
+    <string name="str_video_info">视频信息</string>
+    <string name="str_audio_info">音频信息</string>
+    <string name="str_storage_director">存储路劲</string>
+
+
+    <string name="str_audio_encode_type">音频编码类型</string>
+    <string name="str_audio_sample_rate">音频采样率</string>
+    <string name="str_audio_bit_rate">音频码率</string>
+    <string name="str_audio_frame_rate">音频帧率</string>
+
+    <string name="str_encode_type">编码类型</string>
+    <string name="str_real_frame_rate">实际帧率</string>
+    <string name="str_frame_rate">帧率</string>
+    <string name="str_resolution">分辨率</string>
+    <string name="str_real_bit_rate">实际比特率</string>
+    <string name="str_bit_rate">比特率</string>
+
+    <string name="str_local_ip">本地IP</string>
+    <string name="str_rtmp_url">RTMP推流地址</string>
+    <string name="str_rtmp_push_state">RTMP推流狀態</string>
+    <string name="str_p2p_server_addr">P2P服務器地址</string>
+    <string name="str_server_state">P2P服務器狀態</string>
+    <string name="str_storage_server_addr">存储服務器地址</string>
+    <string name="str_record_state">录像狀態</string>
+    <string name="str_speak_state">對講狀態</string>
+    <string name="str_drop_count">丢包计数</string>
+
+    <string name="str_exit">退出</string>
+
+    <string name="str_start">開始</string>
+    <string name="str_stop">停止</string>
+    <string name="str_online">在線</string>
+    <string name="str_offline">離線</string>
+    <string name="str_pushing">正在推流...</string>
+    <string name="str_pushing_stopped">推流停止</string>
+    <string name="str_device_id">设备ID</string>
+    <string name="str_set_device_id">修改設備ID</string>
+
+    <string name="str_set_bit_frame">修改比特率</string>
+    <string name="str_set_storage_server_addr">修改存储服务器地址</string>
+    <string name="str_set_p2p_server_addr">修改P2P服务器地址</string>
+    <string name="str_set_rtmp_url">修改RTMP地址</string>
+    <string name="str_modify">修改</string>
+    <string name="str_success_modify">修改成功！</string>
+    <string name="str_reboot">重启设备生效！</string>
+    <string name="str_input_bit_rate">請輸入新的比特率</string>
+    <string name="str_input_correct_bitrate">請輸入正確比特率</string>
+    <string name="str_input_correct_storage_server">請輸入正確存储服务器地址</string>
+    <string name="str_input_rtmp_url">請輸入RTMP地址</string>
+    <string name="str_input_correct_p2p_server">請輸入正確P2P服务器地址</string>
+    <string name="str_input_device_id">請輸入新的設備ID</string>
+    <string name="str_input_correct_device_id">請輸入正確的設備ID</string>
+    <string name="str_camera_auth">没有相机和录音权限，是否需要到权限管理开启相关权限？</string>
+    <string name="str_no_storage_authorization">对不起，您没有存储权限！</string>
+    <string name="str_create_failed">对不起，创建文件失败！</string>
+    <string name="str_select_storage_director">录像失败，请先设置存储路径！</string>
+
+    <string name="IP">主服务器IP:</string>
+    <string name="PORT">主服务器端口:</string>
+    <string name="PHONE">手机号:</string>
+    <string name="MANUFACTURER_ID">制造商:</string>
+    <string name="TERMINAL_MODEL">设备型号:</string>
+    <string name="TERMINAL_ID">终端ID:</string>
+    <string name="NO_SIM">未知</string>
+    <string name="IP_LOCAL">从服务器IP:</string>
+    <string name="PORT_LOCAL">从服务器端口:</string>
+
+</resources>

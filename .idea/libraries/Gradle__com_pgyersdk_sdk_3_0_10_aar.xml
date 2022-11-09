@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pgyersdk:sdk:3.0.10@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/62d4d2bd2370141dd65b162e79c73923/jetified-sdk-3.0.10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/62d4d2bd2370141dd65b162e79c73923/jetified-sdk-3.0.10/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3693cd870c269b069acf229896982606/jetified-sdk-3.0.10/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3693cd870c269b069acf229896982606/jetified-sdk-3.0.10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3693cd870c269b069acf229896982606/jetified-sdk-3.0.10/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pgyersdk/sdk/3.0.10/2929ffcac2772d599b3f37ec2c1b7e32e8cd55cc/sdk-3.0.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pgyersdk/sdk/3.0.10/86d38b815c49356c02cd7f442816b19d8aebad86/sdk-3.0.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
