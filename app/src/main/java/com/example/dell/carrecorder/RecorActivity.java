@@ -2029,7 +2029,7 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
         m_msgHandler.sendEmptyMessageDelayed(MSG_LCD_CLOSE,DEFAULT_TIME_SCREEN_OFF);
         m_msgHandler.removeMessages(MSG_START_RECORD);
         m_msgHandler.sendEmptyMessageDelayed(MSG_START_RECORD, MSG_START_RECORD_START_TIME);
-        acquireWakeLock();
+        //acquireWakeLock();
         checkVersionCode();
     }
 
@@ -2081,7 +2081,7 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
             location808 = null;
         }*/
         Location808.getInstance().stopLocation();
-        releaseWakeLock();
+        //releaseWakeLock();
     }
 
     private void initJTT808() {
@@ -3142,7 +3142,7 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
         return (int) (minutes * 60 + seconds) * 1000;
     }
     public static void closeLCD(int value) {
-        String SYS_PATH = "/sys/class/leds/lcd-backlight/brightness";
+        /*String SYS_PATH = "/sys/class/leds/lcd-backlight/brightness";
         BufferedWriter bufWriter = null;
         FileWriter fileWriter = null;
         try {
@@ -3167,7 +3167,7 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
             }
         }
 
-        return;
+        return;*/
     }
     public static int readLCD() {
         String SYS_PATH = "/sys/class/leds/lcd-backlight/brightness";
