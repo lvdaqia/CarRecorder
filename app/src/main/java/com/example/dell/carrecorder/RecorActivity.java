@@ -380,7 +380,7 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
                     break;
                 case MSG_LCD_CLOSE:
                     //2022-06-24 if close screen ,go to idle screen start
-                    if (settingListView != null && settingListView.isShown()) {
+                   /* if (settingListView != null && settingListView.isShown()) {
                         mainRelativeLayout.setVisibility(View.VISIBLE);
                         settingListView.setVisibility(View.GONE);
                         gridView.setVisibility(View.VISIBLE);
