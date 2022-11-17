@@ -162,7 +162,7 @@ public class Location808 {
     private double distance;
     public void updateLocation(Location location) {
         if (location != null) {
-            StringBuffer sb = new StringBuffer();
+            /*StringBuffer sb = new StringBuffer();
             sb.append("实时的位置信息：\n经度：");
             sb.append(location.getLongitude());
             sb.append("\n纬度：");
@@ -174,7 +174,7 @@ public class Location808 {
             sb.append("\n方向：");
             sb.append(location.getBearing());
             sb.append("\n精度：");
-            sb.append(location.getAccuracy());
+            sb.append(location.getAccuracy());*/
             //Log.d(TAG, sb.toString());
             if(preLatitude!=0&&preLongitude!=0) {
                 //distance = MapHelper.distance(preLatitude, preLongitude, location.getLatitude(), location.getLongitude());

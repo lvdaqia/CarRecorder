@@ -131,7 +131,7 @@ import media.sdk.MediaSurfaceSdk.Display.ImageDrawer;
 
 public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRecordObserver, MediaSdk.VideoEncoderObserver,
         MediaSdk.AudioEncodedObserver, MediaSdk.PreviewObserver, OnConnectionListener, MediaSdk.LocalPlaybackObserver,
-        Location808.OnLocationListener, TitleAdapter.UpdateSetting, LiveClient.ReceiveLiveClientDataCallBack , View.OnTouchListener ,
+        Location808.OnLocationListener, TitleAdapter.UpdateSetting, LiveClient.ReceiveLiveClientDataCallBack ,
         MapgooIPC.CmdDealCallBack,MapgooIPC.ConnStatusNotifCallBack,AdapterView.OnItemLongClickListener {
     private static String TAG = "RecorActivity";
     public static final int FLAG_HOMEKEY_DISPATCHED = 0x80000000;
@@ -398,7 +398,7 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
                         //goHome.sendEmptyMessageDelayed(1,20);
                     }*/
                     //end
-                    closeLCD(0);
+                    //closeLCD(0);
                     break;
                 case MSG_MONITER:break;
                 case MSG_TCP_NO_ALIVE:
@@ -550,25 +550,25 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
        // handleOTA(true);
     }
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        //Log.d(TAG, event.getAction()+"");
-        if(event.getAction()==KeyEvent.ACTION_UP){
-            Log.d(TAG, "----------  set screen off time -------- ");
-            m_msgHandler.removeMessages(MSG_LCD_CLOSE);
-            m_msgHandler.sendEmptyMessageDelayed(MSG_LCD_CLOSE, DEFAULT_TIME_SCREEN_OFF);
-            if(readLCD()==0) {
-                closeLCD(1);
-                //m_msgHandler.removeMessages(MSG_LCD_CLOSE);
-                //m_msgHandler.sendEmptyMessageDelayed(MSG_LCD_CLOSE, DEFAULT_TIME_SCREEN_OFF);
-                return true;
-            }/*else {
-                m_msgHandler.removeMessages(MSG_LCD_CLOSE);
-                m_msgHandler.sendEmptyMessageDelayed(MSG_LCD_CLOSE, DEFAULT_TIME_SCREEN_OFF);
-            }*/
-        }
-        return false;
-    }
+//    @Override
+//    public boolean onTouch(View v, MotionEvent event) {
+//        Log.d(TAG, event.getAction() + "");
+//        if (event.getAction() == KeyEvent.ACTION_UP) {
+//            Log.d(TAG, "----------  set screen off time -------- ");
+//            m_msgHandler.removeMessages(MSG_LCD_CLOSE);
+//            m_msgHandler.sendEmptyMessageDelayed(MSG_LCD_CLOSE, DEFAULT_TIME_SCREEN_OFF);
+//            if (readLCD() == 0) {
+//                closeLCD(1);
+//                //m_msgHandler.removeMessages(MSG_LCD_CLOSE);
+//                //m_msgHandler.sendEmptyMessageDelayed(MSG_LCD_CLOSE, DEFAULT_TIME_SCREEN_OFF);
+//                return true;
+//            }/*else {
+//                m_msgHandler.removeMessages(MSG_LCD_CLOSE);
+//                m_msgHandler.sendEmptyMessageDelayed(MSG_LCD_CLOSE, DEFAULT_TIME_SCREEN_OFF);
+//            }*/
+//            }
+//            return false;
+//    }
 
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -851,7 +851,7 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
     private void findViewID() {
         gridView = (GridView) this.findViewById(R.id.main_gv);
         gridView.setOnItemClickListener(mainItemClickListener);
-        gridView.setOnTouchListener(this);
+        //gridView.setOnTouchListener(this);
         gridView.setOnItemLongClickListener(this);
         settingListView = ((ListView) findViewById(R.id.setting_list));
         settingListView.setOnItemClickListener(settingItemClickListener);
@@ -1109,27 +1109,27 @@ public class RecorActivity extends AppCompatActivity implements MediaSdk.LocalRe
 
     }
 
-    private void getPhoneNumber() {
-        TelephonyManager tm = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
-        String tel = tm.getLine1Number();
-
-        if (tel == null || tel.equalsIgnoreCase("")) {
-            Log.d(TAG, "tel==null");
-            if (titleBeans != null) {
-                //titleBeans.get(3).setValue(getString(R.string.NO_SIM));
-                SharePreUtil.putString(this, "PHONE", titleBeans.get(5).getValue());
-                titleAdapter.notifyDataSetChanged();
-            }
-        } else {
-            Log.d(TAG, "tel!=null");
-            SharePreUtil.putString(this, "PHONE", "0" + tel);
-            if (titleBeans != null) {
-                titleAdapter.notifyDataSetChanged();
-                titleBeans.get(5).setValue("0" + tel);
-            }
-        }
-
-    }
+//    private void getPhoneNumber() {
+//        TelephonyManager tm = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
+//        String tel = tm.getLine1Number();
+//
+//        if (tel == null || tel.equalsIgnoreCase("")) {
+//            Log.d(TAG, "tel==null");
+//            if (titleBeans != null) {
+//                //titleBeans.get(3).setValue(getString(R.string.NO_SIM));
+//                SharePreUtil.putString(this, "PHONE", titleBeans.get(5).getValue());
+//                titleAdapter.notifyDataSetChanged();
+//            }
+//        } else {
+//            Log.d(TAG, "tel!=null");
+//            SharePreUtil.putString(this, "PHONE", "0" + tel);
+//            if (titleBeans != null) {
+//                titleAdapter.notifyDataSetChanged();
+//                titleBeans.get(5).setValue("0" + tel);
+//            }
+//        }
+//
+//    }
 
 
 
