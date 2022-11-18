@@ -35,7 +35,8 @@
         android:launchMode="singleTask"
         >
         <activity android:name="com.example.dell.carrecorder.RecorActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:configChanges="keyboardHidden|orientation|screenSize|locale|screenLayout|mcc|mnc"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT"/>
